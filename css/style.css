@@ -44,7 +44,7 @@ body {
     color: var(--secondary_black_color);
 }
 
-.navbar_other{
+.navbar_other {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -60,6 +60,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--primary_color);
+}
+
+.hamburger {
+    display: none;
 }
 
 /* header contents */
@@ -109,4 +113,132 @@ body {
 
 .img_contents img {
     max-width: 100%;
+}
+
+
+
+/* what we serve sections */
+.we_serve_section {
+    font-family: "Readex Pro", sans-serif;
+    text-align: center;
+    margin: 80px 0px;
+
+}
+
+.we_serve_section h6 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary_color);
+
+}
+
+.we_serve_section h2 {
+
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary_black_color);
+}
+.we_serve_section p {
+
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary_black_color);
+}
+
+.serve_cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.serve_card {
+    width: 241px;
+    height: 316px;
+    text-align: center;
+
+}
+
+.serve_card h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.serve_card p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary_black_color);
+}
+
+@media(max-width:768px) {
+    .navbar {}
+
+    .navbar_other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondary_color);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul.Active {
+        display: flex;
+    }
+
+    .nav_links {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 400px;
+        padding: 20px;
+        background-color: #1D1D1D;
+    }
+
+    .nav_link {
+        list-style: none;
+        font-size: 24px;
+        font-weight: 500;
+        margin-right: 37px;
+
+    }
+
+    .nav_link a {
+        color: white;
+    }
+}
+
+/* Header Responsive Code */
+@media(max-width:768px) {
+    .header_contents {
+        /* height: 100vh; */
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .img_contents img {
+        min-width: 100%;
+    }
+
+    .text_contents {
+        text-align: center;
+    }
+
+    .text_contents h1 {
+        font-size: 35px;
+    }
+
+    .text_contents p {
+        font-size: 18px;
+        margin: 20px 0px;
+    }
+
 }
