@@ -338,6 +338,56 @@ body {
     cursor: pointer;
 }
 
+/* Footer Section*/
+.footer {
+    width: 100%;
+    min-height: 450px;
+    padding: 40px 20px;
+    background-image: url(/images/bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.footer_section>span {
+    border: 0.8vw solid white;
+    border-radius: 50%;
+}
+
+.footer_section {
+    font-size: 18px;
+    line-height: 5vh;
+}
+
+.footer_section ul li {
+    list-style: none;
+
+}
+
+#facebook_icon {
+    border-color: var(--primary_color);
+    background: var(--primary_color);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.footer_buttom {
+    text-align: center;
+}
+
+.footer_buttom hr {
+
+    margin: 6.5vh;
+}
+
 @media(max-width:768px) {
     .navbar {}
 
@@ -408,4 +458,15 @@ body {
         margin: 20px 0px;
     }
 
+}
+
+
+/* Footer Responsive Code */
+@media(max-width:768px) {
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+
+    }
 }
