@@ -27,6 +27,22 @@ body {
     padding: 0px 140px;
 }
 
+.active_link a {
+    color: var(--primary_black_color) !important;
+    border-bottom: 5px solid var(--primary_color);
+}
+
+.cart_quantity {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 22px;
+    background: var(--primary_color);
+}
+
 .nav_links {
     display: flex;
 }
@@ -50,14 +66,14 @@ body {
     gap: 30px;
 }
 
-.navbar_other button {
-    width: 130px;
+.sign_in_btn {
+    width: 122px;
     height: 38px;
     padding: 10px;
     font-size: 18px;
     font-weight: 700;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     background-color: var(--primary_color);
 }
@@ -82,7 +98,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 350px;
+    margin-top: 50px;
 }
 
 .text_contents h1 {
@@ -98,16 +115,16 @@ body {
     margin: 20px 0px;
 }
 
-.text_contents button {
-    width: 130px;
+.get_started_btn {
+    width: 132px;
     height: 38px;
     padding: 10px;
     font-size: 18px;
     font-weight: 700;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 22px;
     background-color: var(--primary_color);
+    cursor: pointer;
 
 }
 
@@ -125,8 +142,14 @@ body {
 
 }
 
+.we_serve_section h6 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary_color);
+}
+
 .we_serve_section,
-.popular_menu_section h6 {
+.popular_menu_section>h6 {
     font-size: 22px;
     font-weight: 500;
     color: var(--primary_color);
