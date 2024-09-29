@@ -227,7 +227,7 @@ body {
     padding: 15px;
 }
 
-#more_menu_btn{
+#more_menu_btn {
     width: 136px;
     height: 40px;
     font-size: 14px;
@@ -242,9 +242,71 @@ body {
 
 }
 
-/* .card_footer p {
-    font-size: 18px;
-} */
+
+.say_contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 100%;
+
+}
+
+.image-grid img:first-child {
+    grid-column: span 2;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+
+.image-grid img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    display: block;
+}
+
+.profile_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.say_card {
+    width: 452px;
+    height: 210px;
+    padding: 30px;
+    background-color: #F1F1F1;
+
+}
+
+.say_card>p {
+    margin-top: 15px;
+}
+
+.say_contents h6 {
+    font-size: 22px;
+    color: var(--primary_color);
+}
+
+.say_contents h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.say_cards{
+    margin-top: 5vh;
+}
 
 @media(max-width:768px) {
     .navbar {}
