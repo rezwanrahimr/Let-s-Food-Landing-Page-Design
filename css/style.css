@@ -304,8 +304,38 @@ body {
     font-weight: 700;
 }
 
-.say_cards{
+.say_cards {
     margin-top: 5vh;
+}
+
+/* Discount Section */
+.discount_banner {
+    width: 80%;
+    height: 50vh;
+    background-image: url(/images/unsplash_2lWGQ02DGL8.png);
+    background-size: cover;
+    margin: 20vh auto;
+    text-align: center;
+    font-size: 1vw;
+    color: var(--secondary_color);
+}
+
+.discount_banner>h1 {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.discount_banner>button {
+    text-align: center;
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2vh;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary_black_color);
+    background-color: var(--primary_color);
+    cursor: pointer;
 }
 
 @media(max-width:768px) {
