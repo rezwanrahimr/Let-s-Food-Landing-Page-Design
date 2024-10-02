@@ -15,6 +15,7 @@
 
 body {
     font-family: "Readex Pro", sans-serif;
+    font-size: 16px;
 }
 
 /* navbar contents */
@@ -209,6 +210,7 @@ body {
     gap: 10px;
     padding: 0px 125px;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .menu_item {
@@ -218,6 +220,8 @@ body {
     border-radius: 10px;
     /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+    align-self: center;
 
 
 }
@@ -306,7 +310,7 @@ body {
 }
 
 .say_card {
-    width: 452px;
+    max-width: 452px;
     height: 210px;
     padding: 30px;
     background-color: #F1F1F1;
@@ -391,6 +395,8 @@ body {
 }
 
 #facebook_icon {
+    width: 30px;
+    height: 32px;
     border-color: var(--primary_color);
     background: var(--primary_color);
 }
@@ -412,13 +418,21 @@ body {
 }
 
 @media(max-width:768px) {
-    .navbar {}
+    .navbar {
+        width: 100%;
+        height: 108px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px;
+    }
 
     .navbar_other {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 10px;
         color: var(--secondary_color);
     }
 
@@ -428,6 +442,11 @@ body {
 
     .navbar ul.Active {
         display: flex;
+    }
+
+    .active_link a {
+        color: var(--secondary_color) !important;
+        border-bottom: 3px solid var(--secondary_color);
     }
 
     .nav_links {
@@ -441,13 +460,14 @@ body {
         margin-top: 400px;
         padding: 20px;
         background-color: #1D1D1D;
+        opacity: 90%;
     }
 
     .nav_link {
         list-style: none;
-        font-size: 24px;
-        font-weight: 500;
-        margin-right: 37px;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 5px 0px;
 
     }
 
@@ -456,30 +476,115 @@ body {
     }
 }
 
-/* Header Responsive Code */
+/* Common Css For Responsive */
 @media(max-width:768px) {
-    .header_contents {
-        /* height: 100vh; */
-        flex-direction: column-reverse;
-        gap: 10px;
+
+    /* 
+    .................what we serve section start............. 
+    */
+    .we_serve_section {
+        margin-top: 200px;
+        margin-bottom: 0;
     }
 
-    .img_contents img {
-        min-width: 100%;
+    .we_serve_section h2,
+    .popular_menu_section h2,
+    .say_text_contents h2 {
+        font-size: 30px;
     }
 
-    .text_contents {
+    .serve_cards {
+        flex-direction: column;
+
+    }
+
+    .say_cards {
+        padding: 0px 20px;
+    }
+
+    /* 
+    .................what we serve section end............. 
+    */
+
+
+    /* Our Popular Menu  start*/
+    .menu_items {
+        display: grid;
+        grid-template-columns: repeat(1, min-content);
+        gap: 100px;
+        padding: 0px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_item div {
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Our Popular Menu  end*/
+
+    /* what the say section  start*/
+    .say_contents {
         text-align: center;
+        padding: 0px 20px;
     }
+
+    .say_text_contents h6 {}
 
     .text_contents h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
-    .text_contents p {
+
+    .text_contents p,
+    .we_serve_section p,
+    .popular_menu_section p {
         font-size: 18px;
         margin: 20px 0px;
     }
+
+    .text_contents,
+    .we_serve_section {
+        text-align: center;
+    }
+
+    .discount_banner>h1 {
+        text-align: center;
+        font-size: large;
+        padding-top: 20vh;
+    }
+
+    .discount_banner>button {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #facebook_icon {
+        width: 30px;
+        height: 32px;
+        padding: 5px;
+    }
+}
+
+/* Header Responsive Code */
+@media(max-width:768px) {
+    .header_contents {
+        height: 100vh;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 20px 0px;
+        background-color: var(--secondary_color);
+    }
+
+    .img_contents img {
+        max-width: 100%;
+    }
+
+
+
+
 
 }
 
