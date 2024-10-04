@@ -474,6 +474,12 @@ body {
     .nav_link a {
         color: white;
     }
+
+    #more_menu_btn {
+       margin-top: 160px;
+
+
+    }
 }
 
 /* Common Css For Responsive */
@@ -511,7 +517,7 @@ body {
     .menu_items {
         display: grid;
         grid-template-columns: repeat(1, min-content);
-        gap: 100px;
+        gap: 160px;
         padding: 0px;
         margin-top: 50px;
         justify-content: center;
